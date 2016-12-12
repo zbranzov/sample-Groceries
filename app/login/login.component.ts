@@ -11,9 +11,10 @@ import { TextField } from "ui/text-field";
 import { alert, LoginService, User } from "../shared";
 
 @Component({
+  moduleId: module.id,
   selector: "gr-login",
-  templateUrl: "login/login.component.html",
-  styleUrls: ["login/login-common.css", "login/login.component.css"],
+  templateUrl: "./login.component.html",
+  styleUrls: ["./login-common.css", "./login.component.android.css"],
 })
 export class LoginComponent implements OnInit {
   user: User;

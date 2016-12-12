@@ -1,5 +1,5 @@
 import { NativeScriptModule } from "nativescript-angular/platform";
-import { NgModule } from "@angular/core";
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
@@ -10,9 +10,10 @@ import { setStatusBarColors, BackendService, LoginService } from "./shared";
 import { LoginModule } from "./login/login.module";
 import { GroceriesModule } from "./groceries/groceries.module";
 
-setStatusBarColors();
+//setStatusBarColors();
 
 @NgModule({
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [
     BackendService,
     LoginService,

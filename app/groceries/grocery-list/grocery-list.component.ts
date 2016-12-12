@@ -7,9 +7,10 @@ import { alert } from "../../shared";
 declare var UIColor: any;
 
 @Component({
+  moduleId: module.id,
   selector: "gr-grocery-list",
-  templateUrl: "groceries/grocery-list/grocery-list.component.html",
-  styleUrls: ["groceries/grocery-list/grocery-list.component.css"],
+  templateUrl: "./grocery-list.component.html",
+  styleUrls: ["./grocery-list.component.css"],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GroceryListComponent {
