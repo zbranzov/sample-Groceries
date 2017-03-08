@@ -17,10 +17,10 @@
   "homepage": "https://github.com/nativescript/sample-Groceries/groceries",
   "nativescript": {
     "id": "org.nativescript.groceries",
-    "tns-android": {
+    "tns-ios": {
       "version": "2.5.0"
     },
-    "tns-ios": {
+    "tns-android": {
       "version": "2.5.0"
     }
   },

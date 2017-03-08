@@ -1,8 +1,8 @@
 env:
     global:
-        #- NODE_VERSION=node
+        - NODE_VERSION=6.9.5
 
-language: android
+language: java
 
 jdk: oraclejdk8
 
@@ -24,7 +24,7 @@ cache:
         - $HOME/.gradle/wrapper/
 
 install:
-    - nvm install node
+    - nvm install $NODE_VERSION
     - wget -O ./nativescript.tgz "https://s3.amazonaws.com/nativescript-ci/build_result/nativescript.tgz"
     - npm install -g nativescript.tgz --ignore-scripts
     - tns usage-reporting disable
